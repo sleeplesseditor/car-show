@@ -2,6 +2,7 @@ import React from 'react';
 import { CubeCamera, Environment, OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import { Car } from './Car';
 import { Rings } from './Rings';
+import { Boxes } from './Boxes';
 
 export function CarShow() {
   return (
@@ -18,6 +19,7 @@ export function CarShow() {
           )}
         </CubeCamera>
         <Rings />
+        <Boxes />
         <spotLight
             angle={0.6}
             castShadow
