@@ -3,6 +3,7 @@ import { CubeCamera, Environment, OrbitControls, PerspectiveCamera } from '@reac
 import { Car } from './Car';
 import { Rings } from './Rings';
 import { Boxes } from './Boxes';
+import { FloatingGrid } from './FloatingGrid';
 
 export function CarShow() {
   return (
@@ -20,6 +21,7 @@ export function CarShow() {
         </CubeCamera>
         <Rings />
         <Boxes />
+        <FloatingGrid />
         <spotLight
             angle={0.6}
             castShadow
