@@ -4,11 +4,12 @@ import { Bloom, ChromaticAberration, DepthOfField, EffectComposer } from '@react
 import { BlendFunction } from 'postprocessing';
 import { CarShow } from './components/CarShow';
 import { Ground } from './components/Ground';
+import { LoadingMessage } from './components/LoadingMessage';
 import './style.css';
 
 function App() {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<LoadingMessage />}>
       <Canvas shadows>
         <CarShow />
         <Ground />

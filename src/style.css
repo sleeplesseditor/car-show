@@ -7,3 +7,17 @@ canvas {
     margin: 0;
     overflow: hidden;
 }
+
+.loading-message {
+    background-color: black;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-message > h1 {
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

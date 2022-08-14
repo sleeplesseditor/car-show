@@ -13,6 +13,11 @@ export function FloatingGrid() {
         diffuse.offset.set(0, 0);
     }, [diffuse]);
 
+    useFrame((state, delta) => {
+        let t = state.clock.getElapsedTime() * 0.68;
+        diffuse.offset.set(0, t);
+    });
+
     return (
         <>
             <mesh
