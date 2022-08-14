@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { CarShow } from './CarShow';
-import { Ground } from './Ground';
+import { CarShow } from './components/CarShow';
+import { Ground } from './components/Ground';
 import './style.css';
 
 function App() {
