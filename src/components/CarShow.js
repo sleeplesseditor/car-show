@@ -8,10 +8,10 @@ import { FloatingGrid } from './FloatingGrid';
 export function CarShow() {
   return (
     <>
-      <OrbitControls target={[0, 0.35, 0]} maxPolarAngle={1.45} />
-        <PerspectiveCamera makeDefault fov={50} position={[3, 2, 5]} />
+      <OrbitControls maxPolarAngle={1.45} target={[0, 0.35, 0]} />
+        <PerspectiveCamera fov={50} makeDefault position={[3, 2, 5]} />
         <color args={[0, 0, 0]} attach="background" />
-        <CubeCamera resolution={256} frames={Infinity}>
+        <CubeCamera frames={Infinity} resolution={256}>
           {(texture) => (
             <>
               <Environment map={texture} />

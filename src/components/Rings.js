@@ -39,8 +39,8 @@ export function Rings() {
                 <mesh
                     castShadow
                     key={i}
-                    receiveShadow
                     position={[0,0,0]}
+                    receiveShadow
                     ref={(el) => (itemsRef.current[i] = el)}
                 >
                     <torusGeometry args={[3.35, 0.05, 16, 100]}/>

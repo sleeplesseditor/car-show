@@ -26,26 +26,30 @@ export function Ground() {
     });
 
     return (
-        <mesh rotation-x={-Math.PI * 0.5} castShadow receiveShadow>
+        <mesh 
+            castShadow 
+            receiveShadow 
+            rotation-x={-Math.PI * 0.5}
+        >
             <planeGeometry args={[30, 30]} />
-            <MeshReflectorMaterial 
-                envMapIntensity={0}
-                dithering={true}
-                normalMap={normal}
-                roughnessMap={roughness}
-                color={[0.015, 0.015, 0.015]}
-                roughness={0.7}
+            <MeshReflectorMaterial
                 blur={[1000, 400]}
-                mixStrength={80}
-                mixContrast={1}
-                resolution={1024}
-                mirror={0}
-                depthScale={0.01}
-                minDepthThreshold={0.9}
-                maxDepthThreshold={1}
-                depthToBlurRatioBias={0.25}
+                color={[0.015, 0.015, 0.015]}
                 debug={0}
+                depthScale={0.01}
+                depthToBlurRatioBias={0.25}
+                dithering={true}
+                envMapIntensity={0}
+                maxDepthThreshold={1}
+                minDepthThreshold={0.9}
+                mirror={0}
+                mixContrast={1}
+                mixStrength={80}
+                normalMap={normal}
                 reflectorOffset={0.2}
+                resolution={1024}
+                roughness={0.7}
+                roughnessMap={roughness}
             />
         </mesh>
     );
