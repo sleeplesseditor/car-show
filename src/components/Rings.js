@@ -28,9 +28,12 @@ export function Rings() {
         }
     });
 
+    const len = 14;
+    const arr = new Array(len).fill(0);
+
     return (
         <>
-            {[0,0,0,0,0,0,0,0,0,0,0,0,0,0].map((v, i) => (
+            {arr.map((v, i) => (
                 <mesh
                     castShadow
                     key={i}
