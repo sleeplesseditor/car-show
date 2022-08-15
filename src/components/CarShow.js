@@ -15,7 +15,7 @@ export function CarShow() {
           {(texture) => (
             <>
               <Environment map={texture} />
-              <Car />
+              <Car carModel='models/car/scene.gltf' />
             </>
           )}
         </CubeCamera>

@@ -3,10 +3,10 @@ import { useFrame, useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { Mesh } from 'three';
 
-export function Car() {
+export function Car({ carModel }) {
     const gltf = useLoader(
         GLTFLoader,
-        process.env.PUBLIC_URL + 'models/car/scene.gltf'
+        process.env.PUBLIC_URL + carModel
     );
 
     useEffect(() => {
